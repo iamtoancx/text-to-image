@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image - Tạo Ảnh Từ Chữ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>🎨 Text to Image</h1>
+            <p class="subtitle">Chuyển đổi chữ thành hình ảnh bằng AI</p>
+            
+            <div class="input-group">
+                <label for="prompt">Mô tả hình ảnh:</label>
+                <textarea 
+                    id="prompt" 
+                    placeholder="Gõ mô tả (ví dụ: con mèo dễ thương, bầu trời xanh, etc.)"
+                    rows="3"></textarea>
+            </div>
+            
+            <button id="generateBtn" class="btn-generate">🚀 Tạo Ảnh</button>
+            
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Đang tạo ảnh...</p>
+            </div>
+            
+            <div id="result" class="result" style="display: none;">
+                <h2>Kết Quả:</h2>
+                <img id="resultImage" alt="Generated image">
+                <button id="downloadBtn" class="btn-download">⬇️ Tải Xuống</button>
+            </div>
+            
+            <div id="error" class="error" style="display: none;"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
